@@ -98,3 +98,14 @@ do
     GAMES_ID=$($PSQL "SELECT game_id from games WHERE winner_id = '$WINNER_ID' AND opponent_id = '$OPPONENT_ID'")
   fi
 done
+
+
+#kode di atas masih terlalu kompleks 
+#masih ada cara untuk menyederhanakan, dengan mengurangin beberapa hal yang tidak perlu 
+  #seperti: 
+    # - while-loop kedua tidak perlu ditulis ulang 
+    # - variable teams_name tidak diperlukan 
+    # - variable untuk insert data, bisa diganti dengan perintah echo langsung
+    
+#dengan begitu waktu yang diperlukan lebih singkat dalam menjalankan progaram 
+#menjadi lebih efisien dalam keterbacaan sebuah kode
